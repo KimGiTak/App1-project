@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.ProfilePage">
+
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Label Text="프로필 페이지" FontSize="24" HorizontalOptions="Center"/>
+            <Label x:Name="NameEntry" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+            <Label x:Name="email" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+            <Label x:Name="AgeLabel" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+            <Label x:Name="HeightLabel" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+            <Label x:Name="WeightLabel" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+            <Label x:Name="BMILabel" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+            <Label x:Name="BMRLabel" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+            <Label x:Name="NameLabel" FontSize="20"/>
+            <Button Text="이메일 주소 변경" Clicked="OnChangeEmailClicked"/>
+            <Button Text="비밀번호 재설정" Clicked="OnResetPasswordClicked"/>
+            <Button Text="SMS 인증" Clicked="OnSmsVerificationClicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

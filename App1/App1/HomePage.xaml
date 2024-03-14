@@ -1,0 +1,22 @@
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.HomePage">
+
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <!-- 프로필로고 추가 -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="End" Margin="10">
+                <Button Text="MY" Clicked="OnMyButtonClicked" BackgroundColor="Transparent" TextColor="Black"/>
+                <Image Source="my_icon.png" HeightRequest="30" WidthRequest="30" VerticalOptions="Center"/>
+                <Button x:Name="LogoutButton" Text="Log Out" Clicked="OnLogoutButtonClicked" BackgroundColor="Transparent" TextColor="Black" IsVisible="True"/>
+
+                <Button Text="map" Clicked="OnMapButtonClicked" BackgroundColor="Transparent" TextColor="Black"/>
+
+            </StackLayout>
+
+            <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                <Label Text="Home Page" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

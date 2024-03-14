@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.FourthPage"
+             BackgroundColor="#34495E">
+
+	<ContentPage.Content>
+        <StackLayout Padding="20" BackgroundColor="#34495E">
+			<!-- 여기에 현재의 BMI를 표시하는 레이블 추가 -->
+			<Label x:Name="BMILabel" FontSize="18" TextColor="White" />
+
+			<!-- 여기에 선택한 목표와 맞는 운동 루틴을 표시하는 레이블 추가 -->
+			<Label x:Name="RecommendationLabel" FontSize="18" TextColor="White" Margin="0,10,0,20" />
+
+			<!-- 회원가입을 완료하시겠습니까? 다이얼로그 표시를 위한 버튼 -->
+			<Button Text="회원가입 완료하시겠습니까?" Clicked="OnCompleteRegistrationClicked" FontSize="22" TextColor="White" BackgroundColor="#1E90FF" />
+		</StackLayout>
+	</ContentPage.Content>
+
+</ContentPage>

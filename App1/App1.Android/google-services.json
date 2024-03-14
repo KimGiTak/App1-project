@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "203442702322",
+    "firebase_url": "https://login-fba75-default-rtdb.firebaseio.com",
+    "project_id": "login-fba75",
+    "storage_bucket": "login-fba75.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:203442702322:android:f2318b49673bd8200ccd6b",
+        "android_client_info": {
+          "package_name": "com.companyname.app2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArevEEm7iw4hZEHN7WDWRQKNOCM02oPeA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

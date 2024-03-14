@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.FirstPage"
+             BackgroundColor="#34495E">
+
+    <StackLayout Padding="20" BackgroundColor="#2C3E50">
+        <Entry Placeholder="이름" x:Name="NameEntry" PlaceholderColor="Gray" BackgroundColor="#34495E" TextColor="White" />
+        <Entry Placeholder="이메일" x:Name="UserNewEmail" PlaceholderColor="Gray" BackgroundColor="#34495E" TextColor="White" />
+        <Entry Placeholder="비밀번호" IsPassword="True" x:Name="UserNewPassword" PlaceholderColor="Gray" BackgroundColor="#34495E" TextColor="White" />
+        <Entry Placeholder="나이" Keyboard="Numeric" x:Name="AgeEntry" PlaceholderColor="Gray" BackgroundColor="#34495E" TextColor="White" />
+        <Entry Placeholder="키" Keyboard="Numeric" x:Name="HeightEntry" PlaceholderColor="Gray" BackgroundColor="#34495E" TextColor="White" />
+        <Entry Placeholder="몸무게" Keyboard="Numeric" x:Name="WeightEntry" PlaceholderColor="Gray" BackgroundColor="#34495E" TextColor="White" />
+
+        <!-- BMI 및 BMR 표시 -->
+        <Label x:Name="BMILabel" TextColor="White" />
+        <Label x:Name="BMIStatusLabel" TextColor="White" />
+        <Label x:Name="BMRLabel" TextColor="White" />
+        <Label x:Name="SelectedGoalLabel" TextColor="White" />
+        <Label x:Name="CarbLabel" TextColor="White" />
+        <Label x:Name="ProteinLabel" TextColor="White" />
+        <Label x:Name="FatLabel" TextColor="White" />
+
+        <Button BackgroundColor="#1E90FF" Clicked="OnSignUpButtonClicked" TextColor="White" Text="다음" />
+    </StackLayout>
+</ContentPage>

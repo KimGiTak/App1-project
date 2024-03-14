@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.MapPage">
+
+	<ContentPage.Content>
+		<StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+			<!-- 프로필로고 추가 -->
+			<StackLayout Orientation="Horizontal" HorizontalOptions="End" Margin="10">
+				<Button Text="Gym" Clicked="OnFindGymButtonClicked" BackgroundColor="Transparent" TextColor="Black"/>
+				<!-- 다른 이미지 아이콘을 사용하고자 하는 경우 Image 태그를 추가하세요 -->
+				<!-- <Image Source="gym_icon.png" HeightRequest="30" WidthRequest="30" VerticalOptions="Center"/> -->
+			</StackLayout>
+
+			<StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+				<Label Text="Map Page" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+			</StackLayout>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1"
+             x:Class="App1.MainPage"
+             BackgroundColor="#34495E">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="backgroundColor">#34495E</Color>
+            <!-- 버튼 스타일을 변경 -->
+            <Style x:Key="ButtonStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#3498DB" />
+                <!-- 버튼 배경색을 변경 -->
+                <Setter Property="TextColor" Value="White" />
+                <!-- 버튼 텍스트색을 흰색으로 변경 -->
+                <Setter Property="FontSize" Value="Large" />
+                <!-- 버튼 폰트 사이즈를 크게 변경 -->
+                <Setter Property="Margin" Value="0,0,0,10" />
+                <!-- 버튼 간격 조정 -->
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="{StaticResource backgroundColor}">
+            <Label Text="당신에게 맞춘 운동 코칭! 운동 고민 끝!"
+                   TextColor="White" 
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="Large"
+                   Margin="0,0,0,20"/>
+
+            <Image Source="App1.asset.imgs.image123.jpg" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+
+
+
+            <StackLayout>
+                <Button Text="로그인" Clicked="OnLogPageButtonClicked" Style="{StaticResource ButtonStyle}" />
+                <Button Text="회원가입" Clicked="OnOnePageButtonClicked" Style="{StaticResource ButtonStyle}" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

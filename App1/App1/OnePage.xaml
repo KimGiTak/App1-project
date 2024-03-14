@@ -1,0 +1,55 @@
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.OnePage"
+             BackgroundColor="#34495E">
+
+    <ScrollView>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" Padding="20">
+            <Label Text="나이" TextColor="White" />
+            <Entry x:Name="AgeEntry" Placeholder="나이를 입력하세요." BackgroundColor="#2C3E50" TextColor="White" />
+
+            <Label Text="키(cm)" TextColor="White" />
+            <Entry x:Name="HeightEntry" Placeholder="키를 입력하세요." BackgroundColor="#2C3E50" TextColor="White" />
+
+            <Label Text="몸무게(kg)" TextColor="White" />
+            <Entry x:Name="WeightEntry" Placeholder="몸무게를 입력하세요." BackgroundColor="#2C3E50" TextColor="White" />
+
+            <Label Text="성별" TextColor="White" />
+            <Picker x:Name="GenderPicker" BackgroundColor="#2C3E50" TextColor="White">
+                <Picker.Items>
+                    <x:String>남성</x:String>
+                    <x:String>여성</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Label Text="목표 선택" TextColor="White" />
+            <Picker x:Name="GoalPicker" BackgroundColor="#2C3E50" TextColor="White">
+                <Picker.Items>
+                    <x:String>근성장</x:String>
+                    <x:String>근성장 및 다이어트</x:String>
+                    <x:String>체지방 감소(다이어트)</x:String>
+                    <x:String>해당없음(BMI에 따른 운동법을 추천합니다.)</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <StackLayout BackgroundColor="#2C3E50" Spacing="10">
+                <Label Text="BMI(비만도)" TextColor="White" />
+                <Label x:Name="BMILabel" TextColor="White" />
+                <Label Text="BMI Feedback" TextColor="White" />
+                <Label x:Name="BMIStatusLabel" TextColor="White" />
+                <Label Text="BMR(기초대사량)" TextColor="White" />
+                <Label x:Name="BMRLabel" TextColor="White" />
+                <Label Text="탄수화물(g)" TextColor="White" />
+                <Label x:Name="CarbLabel" TextColor="White" />
+                <Label Text="단백질(g)" TextColor="White" />
+                <Label x:Name="ProteinLabel" TextColor="White" />
+                <Label Text="지방(g)" TextColor="White" />
+                <Label x:Name="FatLabel" TextColor="White" />
+            </StackLayout>
+
+            <Button Text="계산" Clicked="CalculateButton_Clicked" BackgroundColor="#1E90FF" TextColor="White" />
+            <Button Text="이동" Clicked="GoToFirstPageButton_Clicked" BackgroundColor="#49CA37" TextColor="White" />
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

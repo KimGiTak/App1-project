@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.ThirdPage"
+             BackgroundColor="#34495E">
+
+    <ContentPage.Content>
+        <StackLayout Padding="20" Spacing="20">
+            <!-- 운동 수준 선택 -->
+            <Label Text="운동 수준을 선택하세요" FontSize="20" TextColor="White" />
+            <Picker x:Name="LevelPicker" Title="운동 수준 선택" FontSize="18" TextColor="White" BackgroundColor="White">
+                <Picker.Items>
+                    <x:String>입문</x:String>
+                    <x:String>초급</x:String>
+                    <x:String>중급</x:String>
+                    <x:String>고급</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <!-- 운동 강도 선택 -->
+            <Label Text="운동 강도 선택 (0 ~ 100)" FontSize="20" TextColor="White" />
+            <StackLayout Orientation="Horizontal" Spacing="20" VerticalOptions="Center">
+                <Slider x:Name="IntensitySlider"
+            ValueChanged="IntensitySlider_ValueChanged"
+            Minimum="0"
+            Maximum="100"
+            Value="50"
+            ThumbColor="#3498DB"
+            MinimumTrackColor="#3498DB"
+            MaximumTrackColor="#7F8C8D"
+            WidthRequest="300"/>
+                <!-- 너비를 더 크게 조정 -->
+                <Label Text="50" TextColor="White" FontSize="16" HorizontalOptions="Center"/>
+            </StackLayout>
+
+            <!-- 운동 장소 선택 -->
+            <Label Text="운동 장소를 선택하세요" FontSize="20" TextColor="White" />
+            <Picker x:Name="LocationPicker" Title="운동 장소 선택" FontSize="18" TextColor="White" BackgroundColor="#2C3E50">
+                <Picker.Items>
+                    <x:String>거주지</x:String>
+                    <x:String>헬스장</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <!-- 흡연 정도 선택 -->
+            <Label Text="주 간 흡연 정도 (0 ~ 7)" FontSize="20" TextColor="White" />
+            <Slider x:Name="SmokingSlider"
+                    Minimum="0"
+                    Maximum="7"
+                    Value="3.5"
+                    ThumbColor="#3498DB"
+                    MinimumTrackColor="#3498DB"
+                    MaximumTrackColor="#7F8C8D" />
+            <Label Text="0" TextColor="White" FontSize="16" HorizontalOptions="Center"/>
+
+            <!-- 음주 정도 선택 -->
+            <Label Text="주 간 음주 정도 (0 ~ 7)" FontSize="20" TextColor="White" />
+            <Slider x:Name="DrinkingSlider"
+                    Minimum="0"
+                    Maximum="7"
+                    Value="3.5"
+                    ThumbColor="#3498DB"
+                    MinimumTrackColor="#3498DB"
+                    MaximumTrackColor="#7F8C8D" />
+            <Label Text="0" TextColor="White" FontSize="16" HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

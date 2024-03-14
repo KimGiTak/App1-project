@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.SecondPage"
+             BackgroundColor="#2C3E50">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="textColor">#FFFFFF</Color>
+            <!-- 텍스트 색상을 흰색으로 변경 -->
+            <Color x:Key="switchColor">#3498DB</Color>
+            <!-- 스위치 색상을 파란색으로 변경 -->
+            <Color x:Key="buttonColor">#1E90FF</Color>
+            <!-- 버튼 배경 색상을 파란색으로 변경 -->
+            <Color x:Key="buttonPressedColor">#0066CC</Color>
+            <!-- 버튼 누름 상태 색상을 진한 파란색으로 변경 -->
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout x:Name="mainStackLayout" Padding="20" Spacing="20">
+            <Label Text="어떤 부분에서 초점을 맞춰 운동을 하고 싶나요?" FontSize="20" TextColor="{StaticResource textColor}" />
+
+            <StackLayout Spacing="10">
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <Switch VerticalOptions="Center" OnColor="{StaticResource switchColor}" />
+                    <Label Text="벌크업 하기" TextColor="{StaticResource textColor}" FontSize="18" VerticalOptions="Center"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <Switch VerticalOptions="Center" OnColor="{StaticResource switchColor}" />
+                    <Label Text="지구력 향상 or 체력 향상" TextColor="{StaticResource textColor}" FontSize="18" VerticalOptions="Center"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <Switch VerticalOptions="Center" OnColor="{StaticResource switchColor}" />
+                    <Label Text="체지방 제거" TextColor="{StaticResource textColor}" FontSize="18" VerticalOptions="Center"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <Switch VerticalOptions="Center" OnColor="{StaticResource switchColor}" />
+                    <Label Text="근력 향상" TextColor="{StaticResource textColor}" FontSize="18" VerticalOptions="Center"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <Switch VerticalOptions="Center" OnColor="{StaticResource switchColor}" />
+                    <Label Text="신체 균형 향상" TextColor="{StaticResource textColor}" FontSize="18" VerticalOptions="Center"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <Switch VerticalOptions="Center" OnColor="{StaticResource switchColor}" />
+                    <Label Text="탄탄한 몸 만들기" TextColor="{StaticResource textColor}" FontSize="18" VerticalOptions="Center"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <Switch VerticalOptions="Center" OnColor="{StaticResource switchColor}" />
+                    <Label Text="마른 몸 벗어나기" TextColor="{StaticResource textColor}" FontSize="18" VerticalOptions="Center"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <Switch VerticalOptions="Center" OnColor="{StaticResource switchColor}" />
+                    <Label Text="굵고 큰 팔 만들기" TextColor="{StaticResource textColor}" FontSize="18" VerticalOptions="Center"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <Switch VerticalOptions="Center" OnColor="{StaticResource switchColor}" />
+                    <Label Text="군살 제거" TextColor="{StaticResource textColor}" FontSize="18" VerticalOptions="Center"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <Switch VerticalOptions="Center" OnColor="{StaticResource switchColor}" />
+                    <Label Text="뱃살(다이어트) 빼기" TextColor="{StaticResource textColor}" FontSize="18" VerticalOptions="Center"/>
+                </StackLayout>
+            </StackLayout>
+
+            <Label x:Name="totalCheckBoxLabel" TextColor="{StaticResource textColor}" FontSize="16" />
+            <Label x:Name="checkedCheckBoxLabel" TextColor="{StaticResource textColor}" FontSize="16" />
+
+            <Button Text="등록 완료" Clicked="OnRegistrationCompleteButtonClicked" FontSize="20" TextColor="{StaticResource textColor}" BackgroundColor="{StaticResource buttonColor}">
+                <Button.Triggers>
+                    <Trigger TargetType="Button" Property="IsPressed" Value="True">
+                        <Setter Property="BackgroundColor" Value="{StaticResource buttonPressedColor}" />
+                    </Trigger>
+                </Button.Triggers>
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
